@@ -1,0 +1,17 @@
+#menu {
+    padding: 5px 50px;
+}
+#menu ul li {
+    text-align: center;
+    list-style: none;
+}
+#menu ul li a {
+    text-decoration: none;
+}
+
+#intro {
+    font-size: 20px;
+}
+h1 {
+    font-size: 30px;
+}
