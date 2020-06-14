@@ -5,6 +5,7 @@
   overflow: hidden;
   background-color: #1C3B22;
   border-radius: 6px;
+  border: 1px solid #6B5649;
 }
 
 #menu li {
