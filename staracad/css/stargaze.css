@@ -1,0 +1,458 @@
+/* Color Scheme
+light green: #81C02C
+grey: #7F7F7F
+light white: #F1F1F1
+black: #121212
+dark green: #185A01
+
+*/
+
+/* standard formatting */
+.style_box {
+    background-color: #81C02C;
+    border: 3px solid #185A01;
+    border-radius: 15px;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+}
+body {
+    background: #121212 url('../images/star_bkgd.jpg') repeat;
+}
+/* top navigation bar */
+.top_nav {
+    padding: 5px 50px;
+}
+.top_nav ul li {
+    text-align: center;
+    list-style: none;
+}
+.top_nav ul li a {
+    text-decoration: none;
+    color: #185A01;
+}
+.top_nav ul li a:hover {
+    color: #7F7F7F;
+    text-decoration: overline;
+}
+.top_nav ul li a:active {
+    color: #F1F1F1;
+}
+.current_page {
+    text-decoration: underline;
+}
+/* fonts, headings, text  */
+h1, .sec_title, #year_ops {
+    color: white;
+}
+.sec_title, #year_ops {
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+.intro_text, .para_text {
+    font-variant: small-caps;
+    font-size: 20px;
+}
+.intro_text {
+    margin: 30px auto;
+}
+msg_star {
+    font-size: 26px;
+    text-align: right;
+}
+.instruct {
+    font-size: 28px;
+}
+.sec_title {
+    font-size: 25px;
+}
+.top_nav {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+}
+.loc_title {
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+}
+.loc_para {
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+}
+.email_text, .mail_text {
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+}
+.value_sq {
+    font-family: 'Space Mono', monospace;
+}
+/* HOME page */
+article, .about_main, .programs_main, .location_main, .contact_main {
+    padding: 10px 50px 50px;
+}
+aside {
+    background-color: #185A01;
+    padding: 10px 50px 15px 20px;
+    border: 2px;
+    border-style: solid;
+    width: 350px;
+    margin: 0 auto;
+}
+.content_body {
+    margin-left: 0 auto;
+}
+#year_ops {
+    font-size: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    width: 280px;
+}
+#send {
+    border-radius: 16px;
+    border-width: 3px;
+    border-color: #7F7F7F;
+    width: auto;
+    color: #185A01;
+    font-size: 35px;
+    background-color: #F1F1F1;
+    padding: 3px 7px;
+    margin-left: 225px;
+    cursor: pointer;
+}
+.error {
+    color: #FF0000;
+}
+.slider-wrapper {
+	width: 80%;
+	margin: 50px auto;
+}
+/* ABOUT page */
+.about_values {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0;
+    border-color: grey;
+}
+.pic_gallery {
+    height: 200px;
+    width: 350px;
+    background-color: #7F7F7F;
+}
+.value_sq {
+    height: 100px;
+    width: 100px;
+    background-image: radial-gradient(circle at center, #F1F1F1 0%, #7F7F7F 150%);
+    padding: 5px;
+    margin: 15px 15px;
+    text-align: center;
+    border-radius: 24px;
+    border: 6px inset #7F7F7F;
+}
+
+.value_sq:hover {
+    opacity: 150%;
+    font-weight: bold;
+}
+/* PROGRAMS page */
+.course_btn {
+    width: 100%;
+    background-color: #7F7F7F;
+    color: #185A01;
+    padding: 5px 20px 5px 15px;
+    border: 2px inset #F1F1F1;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+}
+.active, .course_btn:hover {
+    background-color: #185A01;
+    color: white;
+}
+.course_btn:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: '\2212';
+}
+.info_course {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 18px;
+    transition: 0.2s ease-out;
+    background-color: white;
+    color: #185A01;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+}
+.course_btn {
+    font-size: 16px;
+    font-family: 'Righteous', cursive;
+}
+/* LOCATIONS page */
+.banner_loc {
+    width: 70%;
+    padding-left: 50px;
+}
+.acad_site1, .acad_site2 {
+    text-align: center;
+}
+/* CONTACT page */
+.icons_social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+.email, .twitter_icon, .instagram_icon, .linkedin_icon, .youtube_icon, .mailbox_icon {
+    font-size: 50px;
+    color: #185A01;
+}
+.email_text {
+    padding-left: 0px;
+}
+.email_contact, .address_mail {
+    text-align: center;
+}
+.address_mail {
+    padding-top: 50px;
+}
+
+/* Media queries */
+
+/* Small devices */
+@media (min-width: 750px){
+    /* standard formatting */
+    .style_box {
+        width: 450px;
+        margin-bottom: 7px;
+    }
+    .top_nav {
+        font-size: 21px;
+    }
+    .top_nav ul {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0px;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    /* HOME page */
+    .content {
+        margin-left: 25px;
+    }
+    article, .about_main, .programs_main, .location_main, .contact_main {
+        top: 140px;
+    }
+    aside {
+        width: 230px;
+        position: absolute;
+        top: 160px;
+        z-index: 2;
+        padding-left: 5px;
+        margin-bottom: 10px;
+    }
+    #slider {
+        width: 90%;
+        z-index: 1;
+        margin: 0 auto;
+    }
+    .main_container {
+        flex-wrap: nowrap;
+    }
+    .content_body {
+        width: 300px;
+    }
+    h1, .instruct {
+        text-align: center;
+    }
+    .sec_title {
+        font-size: 22px;
+    }
+    .pic_gallery {
+        margin: 0 auto;
+    }
+    .intro_text, .para_text {
+        font-size: 20px;
+    }
+    .intro_text {
+        width: 400px;
+    }
+    #year_ops {
+        font-size: 20px;
+        width: 250px;
+    }
+    #send {
+        position: relative;
+        right: 120px;
+        font-size: 26px;
+    }
+    /* ABOUT page */
+    .about_values {
+        flex-flow: row wrap;
+    }
+    .value_sq {
+        height: 125px;
+        width: 125px;
+        margin: 20px 20px;
+        font-size: 20px;
+    }
+    /* PROGRAMS page */
+    .course_btn {
+        font-size: 20px;
+    }
+    .info_course {
+        font-size: 16px;
+    }
+    /* LOCATIONS page */
+    .banner_loc {
+        padding-left: 80px;
+    }
+    .acad_site1 h2, .acad_site2 h2 {
+        font-size: 22px;
+    }
+    .acad_site1 h2, .acad_site1 p {
+        text-align: left;
+        padding-left: 110px;
+    }
+    .acad_site2 h2, .acad_site2 p {
+        text-align: right;
+        padding-right: 110px;
+    }
+    /* CONTACT page */
+    .contact_info {
+        display: flex;
+        flex-flow: row;
+    }
+    .address_mail {
+        padding-top: 0px;
+        width: 50%;
+    }
+    .email, .mailbox_icon {
+        font-size: 65px;
+    }
+    .twitter_icon, .instagram_icon, .linkedin_icon, .youtube_icon {
+        font-size: 55px;
+    }
+    .email_text {
+        text-align: left;
+    }
+    .icons_social {
+        width: 80%;
+        margin-left: 0px;
+    }
+    .mail_text {
+        text-align: left;
+    }
+    .mailbox_icon {
+        text-align: center;
+    }
+}
+/* Medium devices */
+@media (min-width: 950px){
+    /* standard formatting */
+    .style_box {
+        width: 650px;
+    }
+    .top_nav {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 46px;
+    }
+    /* HOME page */
+    .content {
+        margin-left: 30px;
+    }
+    .content_body {
+        width: 600px;
+    }
+    #send {
+        font-size: 30px;
+    }
+    .intro_text, .para_text {
+        font-size: 22px;
+    }
+    .intro_text {
+        width: 450px;
+    }
+    /* ABOUT page */
+    .value_sq {
+        height: 150px;
+        width: 150px;
+        font-size: 24px;
+    }
+    /* PROGRAMS page */
+    .course_btn {
+        font-size: 24px;
+    }
+    .info_course {
+        font-size: 18px;
+    }
+    /* LOCATIONS page */
+    .banner_loc {
+        padding-left: 120px;
+    }
+    .acad_site1 h2, .acad_site2 h2 {
+        font-size: 24px;
+    }
+    /* CONTACT page */
+    .contact_info {
+        /* justify-content: space-between; */
+    }
+}
+/* Large devices */
+@media (min-width: 1200px){
+    /* standard formatting */
+    .style_box {
+        width: 800px;
+    }
+    .top_nav {
+        font-size: 32px;
+    }
+    /* HOME page */
+    article {
+        margin-bottom: 0px;
+    }
+    .content_body {
+        width: 800px;
+        margin-bottom: 10px;
+    }
+    .intro_text, .para_text {
+        font-size: 24px;
+    }
+    .intro_text {
+        width: 600px;
+    }
+    /* PROGAMS page */
+    .course_btn {
+        font-size: 28px;
+    }
+    .info_course {
+        font-size: 22px;
+    }
+    /* LOCATIONS page */
+    .banner_loc {
+        padding-left: 150px;
+    }
+    .acad_site1 h2, .acad_site2 h2 {
+        font-size: 28px;
+    }
+    /* CONTACT page */
+
+}

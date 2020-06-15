@@ -8,6 +8,9 @@ h1, #intro {
 h1 {
     font-size: 42px;
 }
+h3 {
+    font-size: 30px;
+}
 
 #intro {
     font-size: 26px;
