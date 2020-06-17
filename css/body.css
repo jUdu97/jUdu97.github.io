@@ -9,7 +9,7 @@ h1 {
     font-size: 42px;
 }
 h3 {
-    font-size: 30px;
+    font-size: 36px;
 }
 
 #intro {
@@ -22,6 +22,9 @@ h3 {
 }
 #contact {
     padding-bottom: 100px;
+}
+.info_text {
+    font-size: 20px;
 }
 
 .container {
