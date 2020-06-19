@@ -25,11 +25,17 @@
   padding: 14px 16px;
   text-decoration: none;
 }
+#menu li a:hover {
+    text-decoration: underline #95F557;
+}
+#menu li a:active {
+    color: #27075C; 
+}
 
 #my_name {
     font-size: 40px;
     color: white;
     position: absolute;
-    top: 12px;
+    top: 8px;
     right: 45px;
 }
