@@ -21,6 +21,7 @@
   display: block;
   color: #FEFCFF;
   font-size: 26px;
+  font-family: 'Cabin', sans-serif;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -34,6 +35,7 @@
 
 #my_name {
     font-size: 40px;
+    font-family: 'Kalam', cursive;
     color: #FEFCFF;
     position: absolute;
     top: 8px;
