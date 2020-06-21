@@ -17,22 +17,19 @@ h3 {
     font-size: 36px;
 }
 
-#intro {
-    font-size: 26px;
-    margin-top: 50px;
-}
-#about, #projects, #contact {
-    padding-top: 350px;
-    text-align: center;
-}
-#contact {
-    padding-bottom: 100px;
+.title_project, .info_text {
+    font-family: 'Yantramanav', sans-serif;
 }
 .info_text {
     font-size: 20px;
-    font-family: 'Yantramanav', sans-serif;
 }
-
+.title_project {
+    font-weight: bolder;
+}
+#intro {
+    font-size: 28px;
+    margin-top: 50px;
+}
 .container {
     display: block;
     color: #FEFCFF;
@@ -42,4 +39,18 @@ h3 {
     margin-top: 15px;
     border: 1px solid #6B5649;
     box-shadow: 5px 10px #ffffff;
+}
+#about, #projects, #contact {
+    padding-top: 350px;
+    text-align: center;
+}
+#contact {
+    padding-bottom: 100px;
+}
+.box_project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
 }
