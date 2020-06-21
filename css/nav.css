@@ -1,7 +1,6 @@
 #menu {
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 98.5%;
 }
 #menu ul {
   list-style-type: none;
@@ -37,7 +36,6 @@
     font-size: 40px;
     font-family: 'Kalam', cursive;
     color: #FEFCFF;
-    position: absolute;
-    top: 8px;
-    right: 45px;
+    padding-top: 6px;
+    padding-left: 560px;
 }
