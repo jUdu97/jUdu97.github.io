@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+
+    <title>MDP - Homepage</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link href="./css/dashboard.css" rel="stylesheet">
+    <link href="./css/documents.css" rel="stylesheet">
+
+    <!-- Data table styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top bg-dark"><a class="navbar-brand" href="#" style="margin: auto;
+ font-size: 22px; padding-bottom: 0; padding-top: 0">Metahuman Distribution Program</a></nav>
+
+
+<div class="container-fluid">
+    <!-- left sidebar -->
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span id="reports" style="cursor: pointer;">Hide reports</span>
+            <span id="newIcon" onclick="chgIcon()" data-feather="minus"></span>
+          </a>
+        </h6>
+        <ul id="reports_menu" class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#daily">
+              <span data-feather="file-text"></span>
+              Today
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#weekly">
+              <span data-feather="file-text"></span>
+              This week
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#monthly">
+              <span data-feather="file-text"></span>
+             This month
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#yearly">
+              <span data-feather="file-text"></span>
+                 This year
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Average National Metahuman Distribution</h1>
+        <button type="button" class="btn dropdown-toggle btn-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All </button>
+        <div class="dropdown-menu">
+            <div class="dropdown-item" id="supers">Supers</div>
+            <div class="dropdown-item" id="villains">Villains</div>
+            <div class="dropdown-item" id="portals">Portals</div>
+            <div class="dropdown-item" id="all">All</div>
+        </div>
+      </div>
+        <!-- average graph chart -->
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
+      <!-- current table -->
+      <h2>Current Distribution by State</h2>
+      <div class="table-responsive">
+        <table id="sp" class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>State</th>
+              <th>Superheroes</th>
+              <th>Villains</th>
+              <th>Ports</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alabama</td>
+              <td>72</td>
+              <td>79</td>
+              <td>70</td>
+
+            </tr>
+            <tr>
+              <td>Alaska</td>
+              <td>5</td>
+              <td>3</td>
+              <td>6</td>
+
+            </tr>
+            <tr>
+              <td>Arizona</td>
+              <td>34</td>
+              <td>40</td>
+              <td>36</td>
+
+            </tr>
+            <tr>
+              <td>Arkansas</td>
+              <td>26</td>
+              <td>20</td>
+              <td>24</td>
+
+            </tr>
+            <tr>
+              <td>California</td>
+              <td>100</td>
+              <td>225</td>
+              <td>95</td>
+
+            </tr>
+            <tr>
+              <td>Colorado</td>
+              <td>56</td>
+              <td>70</td>
+              <td>51</td>
+
+            </tr>
+            <tr>
+              <td>Connecticut</td>
+              <td>14</td>
+              <td>6</td>
+              <td>10</td>
+
+            </tr>
+            <tr>
+              <td>Delaware</td>
+              <td>20</td>
+              <td>25</td>
+              <td>25</td>
+
+            </tr>
+            <tr>
+              <td>Florida</td>
+              <td>92</td>
+              <td>200</td>
+              <td>92</td>
+
+            </tr>
+            <tr>
+              <td>Georgia</td>
+              <td>43</td>
+              <td>40</td>
+              <td>45</td>
+
+            </tr>
+            <tr>
+              <td>Hawaii</td>
+              <td>68</td>
+              <td>45</td>
+              <td>73</td>
+
+            </tr>
+            <tr>
+              <td>Idaho</td>
+              <td>47</td>
+              <td>6</td>
+              <td>20</td>
+
+            </tr>
+            <tr>
+              <td>Illinois</td>
+              <td>84</td>
+              <td>27</td>
+              <td>80</td>
+
+            </tr>
+            <tr>
+              <td>Indiana</td>
+              <td>71</td>
+              <td>81</td>
+              <td>70</td>
+
+            </tr>
+            <tr>
+              <td>Iowa</td>
+              <td>30</td>
+              <td>68</td>
+              <td>20</td>
+
+            </tr>
+            <tr>
+              <td>Kansas</td>
+              <td>77</td>
+              <td>49</td>
+              <td>84</td>
+
+            </tr>
+            <tr>
+              <td>Kentucky</td>
+              <td>76</td>
+              <td>48</td>
+              <td>25</td>
+
+            </tr>
+            <tr>
+              <td>Louisiana</td>
+              <td>17</td>
+              <td>20</td>
+              <td>20</td>
+
+            </tr>
+            <tr>
+              <td>Maine</td>
+              <td>42</td>
+              <td>47</td>
+              <td>30</td>
+
+            </tr>
+            <tr>
+              <td>Maryland</td>
+              <td>35</td>
+              <td>22</td>
+              <td>40</td>
+
+            </tr>
+            <tr>
+              <td>Massachusetts</td>
+              <td>86</td>
+              <td>41</td>
+              <td>83</td>
+
+            </tr>
+            <tr>
+              <td>Michigan</td>
+              <td>78</td>
+              <td>53</td>
+              <td>64</td>
+
+            </tr>
+            <tr>
+              <td>Minnesota</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+
+            </tr>
+            <tr>
+              <td>Mississippi</td>
+              <td>13</td>
+              <td>33</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Missouri</td>
+              <td>12</td>
+              <td>30</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Montana</td>
+              <td>8</td>
+              <td>1</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Nebraska</td>
+              <td>16</td>
+              <td>43</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Nevada</td>
+              <td>9</td>
+              <td>28</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>New Hampshire</td>
+              <td>2</td>
+              <td>11</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>New Jersey</td>
+              <td>86</td>
+              <td>90</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>New Mexico</td>
+              <td>36</td>
+              <td>20</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>New York</td>
+              <td>93</td>
+              <td>300</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>North Carolina</td>
+              <td>21</td>
+              <td>30</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>North Dakota</td>
+              <td>79</td>
+              <td>22</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Ohio</td>
+              <td>46</td>
+              <td>15</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Oklahoma</td>
+              <td>45</td>
+              <td>10</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>Oregon</td>
+              <td>27</td>
+              <td>7</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Pennsylvania</td>
+              <td>76</td>
+              <td>90</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>Rhode Island</td>
+              <td>7</td>
+              <td>25</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>South Carolina</td>
+              <td>51</td>
+              <td>85</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>South Dakota</td>
+              <td>13</td>
+              <td>39</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Tennessee</td>
+              <td>47</td>
+              <td>67</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Texas</td>
+              <td>85</td>
+              <td>23</td>
+              <td>57</td>
+            </tr>
+            <tr>
+              <td>Utah</td>
+              <td>5</td>
+              <td>26</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Vermont</td>
+              <td>14</td>
+              <td>51</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Virginia</td>
+              <td>68</td>
+              <td>29</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>Washington</td>
+              <td>79</td>
+              <td>73</td>
+              <td>61</td>
+            </tr>
+            <tr>
+              <td>West Virginia</td>
+              <td>44</td>
+              <td>31</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Wisconsin</td>
+              <td>22</td>
+              <td>65</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Wyoming</td>
+              <td>3</td>
+              <td>15</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr />
+
+      <!-- Report files to download -->
+      <section id="daily" class="docs">
+          <h4>Daily Report</h4>
+          <a type="button" class="viewmore btn btn-primary" href="./assets/daily_report.pdf" target="_blank">VIEW</a>
+      </section>
+      <section id="weekly" class="docs">
+          <h4>Weekly Report</h4>
+          <a type="button" class="viewmore btn btn-primary" href="./assets/weekly_report.pdf" target="_blank">VIEW</a>
+      </section>
+      <section id="monthly" class="docs">
+          <h4>Monthly Report</h4>
+          <a type="button" class="viewmore btn btn-primary" href="./assets/monthly_report.pdf" target="_blank">VIEW</a>
+      </section>
+      <section id="yearly" class="docs">
+          <h4>Yearly Report</h4>
+          <a type="button" class="viewmore btn btn-primary" href="./assets/yearly_report.pdf" target="_blank">VIEW</a>
+      </section>
+    </main>
+  </div>
+</div>
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js">
+        </script>
+        <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js">
+        </script>
+        <script src="./js/report.js">
+        </script>
+        <script src="./js/dashboard.js">
+        </script>
+        <script src="./js/table.js">
+        </script>
+        <script src="./js/button.js">
+        </script>
+        <script src="./js/documents.js">
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,10 @@
+.docs {
+    font-size: 20px;
+    margin: 30px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.docs h4:hover {
+    text-decoration: grey underline;
+    cursor: pointer;
+}
