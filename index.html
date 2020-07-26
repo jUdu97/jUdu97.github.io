@@ -1,68 +1,129 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Joshua's Portfolio</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Favicons -->
+	<link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16" />
+
+<!-- <meta name="theme-color" content="#563d7c"> -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- styles CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+
     <!-- Icons  -->
     <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Fredoka+One&family=Kalam:wght@700&family=Yantramanav:wght@300&display=swap" rel="stylesheet">
-    <title>Joshua's Portfolio</title>
-</head>
-<body>
-    <nav id="menu">
-        <ul>
-            <li><a href="#" title="Homepage">Home</a></li>
-            <li><a href="#about" title="About">About</a></li>
-            <li><a href="#projects" title="Projects">Projects</a></li>
-            <li><a href="#contact" title="Contact">Contact</a></li>
-            <li id="my_name">JOSHUA UDUEHI</li>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="width: 88%; margin: 0 auto; margin-top: 10px; background-color: #2D7D1D;" id="nav-portfolio">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <a class="navbar-brand" id="my_name">Joshua Uduehi</a>
+        </div>
+      </div>
     </nav>
-    <div class="container">
+
+    <main role="main" class="container-lg" id="main_content" data-spy="scroll" data-target="#navbar-portfolio" data-offset="0">
         <section id="intro">
             <h1>Welcome to my portfolio</h1>
-            <p class="info_text">
-                Take a look at my skills, projects, and more!
-            </p>
+                <p class="info_text">Take a look at my skills, projects, and more!
+                </p>
         </section>
         <section id="about"><h3>About Me</h3>
-            <p class="info_text">
-                I am a site support analyst from Indiana. Looking to explore different areas in programming and web development.
-            </p>
+                <p class="info_text">
+                    I am a site support analyst from Indiana. I am looking to explore different areas in programming, web development, and information technology.
+                </p>
         </section>
         <section id="projects">
             <h3>Personal Projects</h3>
-            <div class="box_project">
-                <p class="info_text">
-                    <span class="title_project">ChillFest: </span>React, JavaScript
-                </p>
-                <a class="button" href="https://indgf.csb.app/" target="_blank"><span class="text_btn">SEE MORE</span></a>
-            </div>
-            <div class="box_project">
-                <p class="info_text">
-                    <span class="title_project">Super Charts: </span>Bootstrap, JavaScript
-                </p>
-                <a class="button" href="./superCharts/index.html" target="_blank"><span class="text_btn">SEE MORE</span></a>
-            </div>
-
-            <div class="box_project">
-                <p class="info_text">
-                     <span class="title_project">Vending Machine: </span>Python, Java
-                </p>
-                <a class="button" href="./files/vend_machine.zip" target="_blank"><span class="text_btn">DOWNLOAD</span></a>
-            </div>
+                <div class="box_project">
+                    <p class="info_text">
+                        <span class="title_project">ChillFest: </span>React, JavaScript
+                    </p>
+                    <a class="button" href="https://indgf.csb.app/" target="_blank"
+                        role="button"><span class="btn text_btn">SEE MORE</span>
+                    </a>
+                </div>
+                <div class="box_project">
+                    <p class="info_text">
+                        <span class="title_project">Super Charts: </span>Bootstrap, JavaScript
+                    </p>
+                    <a class="button" href="./superCharts/index.html" target="_blank" role="button"><span class="btn text_btn">SEE MORE</span>
+                    </a>
+                </div>
+                <div class="box_project">
+                    <p class="info_text">
+                        <span class="title_project">Vending Machine: </span>Python, Java
+                    </p>
+                    <a class="button" href="./files/vend_machine.zip" target="_blank" role="button"><span class="btn text_btn">DOWNLOAD</span>
+                    </a>
+                </div>
         </section>
         <section id="contact">
             <h3>Contact Me</h3>
-            <div id="socials">
-                <a href="https://www.linkedin.com/in/joshua-uduehi/"><i class="fab fa-linkedin fa-5x" id="linkedin" title="LinkedIN profile"></i></a>
-                <a href="mailto:juduehi41@gmail.com"><i class="fas fa-paper-plane fa-5x" id="email" title="Gmail"></i></a>
-                <a href="https://github.com/jUdu97"><i class="fab fa-github-alt fa-5x" id="github" title="GitHub profile"></i></a>
-            </div>
+                <div id="socials">
+                    <a href="https://www.linkedin.com/in/joshua-uduehi/"><i class="fab fa-linkedin fa-5x" id="linkedin" title="LinkedIN profile"></i>
+                    </a>
+                    <a href="mailto:juduehi41@gmail.com"><i class="fas fa-paper-plane fa-5x" id="email" title="Gmail"></i>
+                    </a>
+                    <a href="https://github.com/jUdu97"><i class="fab fa-github-alt fa-5x" id="github" title="GitHub profile"></i>
+                    </a>
+                </div>
         </section>
         <button onclick="upTop()" id="topBtn" title="Scroll to Top">&#129033;</button>
-    </div>
-    <!-- JavaScript -->
-    <script src="./js/scroll.js"></script>
-</body>
+    </main>
+<!-- /.container -->
+<!-- Scrolling JS -->
+<script src="./js/scroll.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>
