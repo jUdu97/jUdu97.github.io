@@ -1,3 +1,4 @@
+/* Scroll back to top button */
 #topBtn {
     position: fixed;
     bottom: 60px;
@@ -8,4 +9,11 @@
     cursor: pointer;
     padding: 8px;
     border-radius: 50%;
+    visibility: hidden;
+}
+
+@media (min-width: 576px) {
+    #topBtn {
+        visibility: visible;
+    }
 }

@@ -40,6 +40,7 @@ h3 {
 #main_content {
     background-color: #2D7D1D;
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 6px;
     border: 1px solid #6B5649;
     box-sizing: content-box;
@@ -57,11 +58,9 @@ h3 {
 #about {
     padding-top: 375px;
 }
-.box_project {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 40%;
+.card {
+    color: black;
+    background-color: #3BBD0B;
+    width: 16em;
     margin: 0 auto;
-    padding-top: 20px;
 }
