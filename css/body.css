@@ -27,6 +27,7 @@ h3 {
 }
 .info_text {
     font-size: 20px;
+    margin: 0 3em;
 }
 .title_project {
     font-weight: bolder;
