@@ -3,15 +3,15 @@
     border-radius: 6px;
     border: 1px solid #6B5649;
 }
-.nav-item .nav-link {
-    color: #FFFFFF;
+.navbar-dark .nav-item .nav-link {
+    color: white;
     font-size: 26px;
     font-family: 'Cabin', sans-serif;
 }
-.nav-item .nav-link:hover {
+.navbar-dark .nav-item .nav-link:hover {
     text-decoration: underline #95F557;
 }
-.nav-item .nav-link:active {
+.navbar-dark .nav-item .nav-link:active {
     color: #27075C;
 }
 

@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #79FA50;
+    background-color: #495057d6;
     position: relative;
 }
 
@@ -39,11 +39,9 @@ h3 {
 }
 
 #main_content {
-    background-color: #2D7D1D;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 6px;
-    border: 1px solid #6B5649;
     box-sizing: content-box;
 }
 #about, #projects, #contact {
@@ -57,11 +55,11 @@ h3 {
     padding-top: 350px;
 }
 #about {
-    padding-top: 375px;
+    padding-top: 400px;
 }
 .card {
     color: black;
-    background-color: #3BBD0B;
+    background-color: #28a745;
     width: 16em;
     margin: 0 auto;
 }
